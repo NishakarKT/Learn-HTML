@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset=UTF-8>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <meta name="description" content="this is description...">
+    <meta name="keywords" content="html, web dev">
+    <meta name="robots" content="INDEX, FOLLOW">
+    <title>HTML entities</title>
+</head>
+
+<body>
+    <!-- html parser removes extra spaces -->
+    <p>Lorem ipsum dolor    sit amet.</p>
+
+    <!-- so to add extra spaces we use &npsp; -->
+    <p>Lorem ipsum dolor &nbsp;&nbsp;&nbsp;&nbsp; sit amet.</p>
+
+    <!-- if we want to print a tag "<p>", we use '&' -->
+    <p>Printing &lt;p&gt; </p>
+
+    <!-- html entitties can also be used to type characters that may not even be present in the keyboard -->
+    <p>Printing &pound;</p>
+    <p>Printing &yen;</p>
+    <p>Printing &copy;</p> <!-- copyright character -->
+    <p>Printing &#8203;</p> <!-- blank character -->
+</body>
+
+</html>
